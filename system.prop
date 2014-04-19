@@ -5,3 +5,13 @@ ro.cwm.enable_key_repeat=true
 ro.sf.lcd_density=280
 
 ro.use_data_netmgrd=true
+
+#Render UI with GPU
+debug.sf.hw=1
+debug.composition.type=c2d
+debug.performance.tuning=1
+persist.sys.composition.type=c2d
+persist.sys.ui.hw=1
+hw3d.force=1
+debug.egl.hw=1
+debug.overlayui.enable=1
