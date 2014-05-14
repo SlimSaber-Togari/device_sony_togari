@@ -13,5 +13,12 @@ debug.performance.tuning=1
 persist.sys.composition.type=c2d
 persist.sys.ui.hw=1
 hw3d.force=1
+hw2d.force=1
+video.accelerate.hw=1
+force_hw_ui=true 
 debug.egl.hw=1
 debug.overlayui.enable=1
+
+persist.service.adb.enable=0                                             
+persist.service.debuggable=0
+persist.sys.usb.config=mtp
