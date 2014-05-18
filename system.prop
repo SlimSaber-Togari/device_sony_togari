@@ -6,19 +6,56 @@ ro.sf.lcd_density=280
 
 ro.use_data_netmgrd=true
 
-#Render UI with GPU
-debug.sf.hw=1
+com.qc.hardware=1
+debug.qc.hardware=true
+debug.qctwa.preservebuf=1
+debug.qctwa.statusbar=1
+
 debug.composition.type=c2d
-debug.performance.tuning=1
+debug.egl.hw=1
+debug.sf.hw=1
+ro.sf.compbypass.enable=0
+#enable harware egl profile
+debug.egl.profiler=1
+#Enable tile rendering
+debug.enabletr=true
 persist.sys.composition.type=c2d
-persist.sys.ui.hw=1
+#16BIT transparency , Smother Scrolling
+persist.sys.use_16bpp_alpha=1
+#3d performance
+persist.android.strictmode=0
+ro.min_pointer_dur=1
+ro.secure=0
 hw3d.force=1
 hw2d.force=1
-video.accelerate.hw=1
-force_hw_ui=true 
-debug.egl.hw=1
-debug.overlayui.enable=1
 
-persist.service.adb.enable=0                                             
-persist.service.debuggable=0
-persist.sys.usb.config=mtp
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+
+ro.config.ehrpd=true
+
+ro.ril.disable.power.collapse=1
+
+ro.config.hw_fast_dormancy=1
+ro.config.hw_power_saving=true
+
+ro.ril.enable.amr.wideband=1
+
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.route.flush=1
+net.ipv4.tcp_ecn=0
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_mem=187000 187000 187000
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.tcp_rmem=4096 39000 187000
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_wmem=4096 39000 187000
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
