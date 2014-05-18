@@ -28,6 +28,7 @@ ro.min_pointer_dur=1
 ro.secure=0
 hw3d.force=1
 hw2d.force=1
+debug.overlayui.enable=1
 
 persist.service.lgospd.enable=0
 persist.service.pcsync.enable=0
